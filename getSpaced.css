@@ -3,6 +3,10 @@
   	background: black;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .title {
   margin-top: 10px;
   font-size: 70px;
@@ -16,14 +20,80 @@
   text-align: center;
 }
 
-.airlock {
-    background-image: url("assets/frame1.jpg");
-    
+.format {
     margin-top: 50px;
-    margin-left: 100px;
     margin-right: 100px;
     width: 800px;
     height: 650px;
+
+}
+
+.airlock0 {
+    background-image: url("assets/frame0.jpg");
+}
+
+.airlock1 {
+    background-image: url("assets/frame1.jpg");
+}
+
+.airlock2 {
+    background-image: url("assets/frame2.jpg");
+}
+
+.airlock3 {
+    background-image: url("assets/frame3.jpg");
+}
+
+.airlock4 {
+    background-image: url("assets/frame4.jpg");
+}
+
+.airlock5 {
+    background-image: url("assets/frame5.jpg");
+}
+
+.airlock6 {
+    background-image: url("assets/frame6.jpg");
+}
+
+.airlock7 {
+    background-image: url("assets/frame7.jpg");
+}
+
+.airlock8 {
+    background-image: url("assets/frame8.jpg");
+}
+
+.airlock9 {
+    background-image: url("assets/frame9.jpg");
+}
+
+.airlock10 {
+    background-image: url("assets/frame10.jpg");
+}
+
+.airlock11 {
+    background-image: url("assets/frame11.jpg");
+}
+
+.airlock12 {
+    background-image: url("assets/frame12.jpg");
+}
+
+.airlock13 {
+    background-image: url("assets/frame13.jpg");
+}
+
+.airlock14 {
+    background-image: url("assets/frame14.jpg");
+}
+
+.airlock15 {
+    background-image: url("assets/frame15.jpg");
+}
+
+.airlock16 {
+    background-image: url("assets/frame16.png");
 }
 
 .countdown {

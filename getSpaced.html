@@ -9,18 +9,21 @@
   <body class="content">
     <h1 class="title">GET SPACED!</h1>
     <h2 class="subtitle">Solve the puzzle before you lose your life....</h2>
-    <section class="col-sm-12 airlock">
-    <form class="countdown">
+    <section class="col-sm-12 airlock0 format" id="format">
+    <form class="countdown" id="hidden">
       <input class="entryfield" type="text" id="box" placeholder="TYPE HERE" border="black" onkeyup="guessBox()">
     </form>
-    <p class="last" >last guess: <span id="guesses"></span></p>
+    <p class="last" id="hidden2">last guess: <span id="guesses"></span></p>
     <hr>
     <p id="info" class="info"></p>
     <p id="blanks" class="blanks"></p>
-  </section>
-  <audio autoplay loop>
+    </section>
+    <audio autoplay loop>
       <source src="assets/pulseLoop.wav" type="audio/wav">
-  </audio>
+    </audio>
+
+    <audio id="noo" src="assets/noo.mp3"></audio>
+
     <script>
 
     // this is where all the starting variables are declared
@@ -65,13 +68,65 @@
     for (var i = 0; i < arr.length; i++) {
       if (arr[i] === userGuess) {
       blanks[i] = userGuess;
+
       leftover--;
+      
+
       found = true;
       } 
     }
 
-    if (found === false) lives--;
-    if (lives === 0) alert('You have LOST the game.');
+    if (found === false) { lives = lives - 1;
+    var element = document.getElementById("format");
+    element.classList.remove("airlock" + (10-lives));
+    element.classList.add("airlock" + (10-lives));
+    
+      if (lives === 0) {
+        document.getElementById("noo").play();
+
+        var hidden = document.getElementById("hidden");
+        hidden.classList.add("hidden");
+
+        var hidden2 = document.getElementById("hidden2");
+        hidden2.classList.add("hidden");
+        console.log("hidden2");
+
+        var hidden3 = document.getElementById("info");
+        hidden3.classList.add("hidden");
+        console.log("info");
+
+        var hidden4 = document.getElementById("blanks");
+        hidden4.classList.add("hidden");
+        console.log("blanks");
+
+        setTimeout(function(){
+        element.classList.remove("airlock10");
+        element.classList.add("airlock11");}, 1000);
+
+        setTimeout(function(){
+        element.classList.remove("airlock11");
+        element.classList.add("airlock12");}, 2000);
+
+        setTimeout(function(){
+        element.classList.remove("airlock12");
+        element.classList.add("airlock13");}, 3000);
+
+        setTimeout(function(){
+        element.classList.remove("airlock13");
+        element.classList.add("airlock14");}, 4000);
+
+        setTimeout(function(){
+        element.classList.remove("airlock14");
+        element.classList.add("airlock15");}, 5000);
+
+        setTimeout(function(){
+        element.classList.remove("airlock15");
+        element.classList.add("airlock16");}, 6000);
+
+      }
+    }
+    
+  
     if (leftover === 0) alert('You have WON the game.');
     
     var answer =
