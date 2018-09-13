@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>GET SPACED!</title>
-    <link rel="stylesheet" type="text/css" href="getSpaced.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   </head>
   <body class="content">
@@ -11,18 +11,15 @@
     <h2 class="subtitle">Solve the puzzle before you lose your life....</h2>
     <section class="col-sm-12 airlock0 format" id="format">
     <form class="countdown" id="hidden">
-      <input class="entryfield" type="text" id="box" placeholder="TYPE HERE" border="black" onkeyup="guessBox()">
+      <input class="entryfield" type="text" id="box" placeholder="TYPE HERE" onkeyup="guessBox()">
     </form>
-    <p class="last" id="hidden2">last guess: <span id="guesses"></span></p>
-    <hr>
     <p id="info" class="info"></p>
     <p id="blanks" class="blanks"></p>
+    <p class="last" id="hidden2">last guess: <span id="guesses"></span></p>
     </section>
     <audio autoplay loop>
       <source src="assets/pulseLoop.wav" type="audio/wav">
     </audio>
-
-    <audio id="noo" src="assets/noo.mp3"></audio>
 
     <script>
 
