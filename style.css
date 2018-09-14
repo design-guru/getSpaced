@@ -116,25 +116,22 @@
   height: 70px;
 }
 
-.last {
-  position: relative;
-  top: -30px;
-  left: -8px;
-  text-align: left;
-  font-size: 12px;
-  font-weight: 600;
-  color: red;
-  background: black;
-  width: 150px;
-  height: 60px;
-  padding-left: 7px;
-  padding-right: 7px;
-  padding-top: 10px; 
-}
+.blanks {
+    position: relative;
+    top: -123px;
+    left: -8px;  
+    background: black;
+    color: green;
+    font-weight: 800;
+    font-size: 20px;
+    width: 150px;
+    height: 34px;
+    padding-left: 14px;
+  }
 
 .info {
   position: relative;
-  top: 230px;
+  top: 130px;
   left: -8px;
   background: black;
   color: lightskyblue;
@@ -146,15 +143,24 @@
   padding-top: 10px;
 }
 
-.blanks {
-  position: relative;
-  top: -20px;
-  left: -8px;  
-  background: black;
-  color: green;
-  font-weight: 800;
-  font-size: 20px;
-  width: 150px;
-  height: 34px;
-  padding-left: 14px;
-}
+.last {
+    position: relative;
+    top: 140px;
+    left: -8px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    color: red;
+    background: black;
+    width: 150px;
+    height: 60px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px; 
+  }
+
+  #sound-msg {
+      font-size: 0.8rem;
+      color: white;
+      text-align: center;
+  }
